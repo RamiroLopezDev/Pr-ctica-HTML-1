@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica HTML 1</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+   <!-- Generamos la cabecera del sitio web con un HEADER -->
+    <header>
+        <h1 style="align-content: center;">Práctica HTML 1</h1> <!-- Colocaremos el título de nuestro sitio -->
+        <nav> <!-- Colocamos una barra de navegación principal para el sitio con algunos enlaces en una lista desordenada-->
+            <ul>
+                <li>Ir al pie de página</li>
+                <li> <a href="https://www.linkedin.com/in/ramiro-lopez-enfermero/" target="blank">Contacto de Linkedin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Generamos la primera sección del sitio utilizando algunos estilos de texto de HTML y lista ordenada -->
+    <section>
+        <h2>Acerca de mi</h2> <!-- Titulo de la primera sección -->
+        <p>Mi nombre es <b>Ramiro Lopez</b>. Tengo 31 años y vivo en <i>Mendoza, Argentina</i>. Soy Enfermero Universitario y trabajo en el área de Emergencias de un hospital. Aquí adjunto una foto mia y una ubicación</p> <br>
+        <img src="assets/foto.JPG" style="align-items: center;"> <br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d498.1945160183808!2d-68.85727455386962!3d-32.86007962366795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1731463375031!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <h3>Lista de Cosas favoritas</h3>
+        <p>A continuación colocaré los <ins>libros</ins> que me gustan con un orden de prioriodades:</p>
+        <ol type="I">
+            <li>El Señor de los Anillos</li>
+            <li>Narnia</li>
+            <li>Harry Potter</li>
+        </ol>
+
+        <p>Mi frase favorita es una de <abbr title="Personaje de El Señor de los Anillos">Gandalf</abbr>: <q>La única decisión posible es qué hacer con el tiempo que tenemos.</q></p> <br>
+        <p>Aqui adjunto un video en donde Gandalf dice esta frase:</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/uT2fC2OmWg0?si=_voqME29Yf1xEjA6&amp;start=54" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <!-- Generamos la segunda sección que tratará de tablas acerca de mi educación formal -->
+    <section>
+        <h2>Mi educación</h2>
+        <table>               
+            <th>Escuela</th> <!-- Colocamos los encabezados de la tabla -->
+            <th>Edad</th>
+            <th>Nivel de Estudio</th>
+
+             <!-- Empezamos a colocar las filas -->          
+            <tr>
+                <td>Escuela Pio XII</td>
+                <td>5 a 12 años</td>
+                <td>Primario</td>
+            </tr>
+             
+            <tr>               
+                <td>Escuela Quimicos Argentinos</td>
+                <td>12 a 18 años</td>
+                <td>Secundario</td>
+            </tr>
+           
+            <tr>               
+                <td>Universidad Tecnológica Nacional</td>
+                <td>18 a 19 años</td>
+                <td>Universitario</td>
+            </tr>
+            
+            <tr>             
+                <td>Instituto Nuestra Señora del Rosario</td>
+                <td>19 años a 21 años</td>
+                <td>Universitario</td>
+            </tr>
+           
+            <tr>
+                <td>Universidad Nacional de Cuyo</td>
+                <td>24 a 29 años</td>
+                <td>Universitario</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Generamos la tercera sección que será de FORMULARIOS -->
+    <section>
+        <h2>Formulario</h2>
+        <p>A continuación encontrarás un <b>FORMULARIO</b> para que llenes luego de haber visto este sitio.</p><br>
+        <form method="post">
+            <label for="name">Nombre:</label> <!-- Input text para el nombre -->
+            <input type="text" name="nombre" id="name">
+            
+            <label for="apellido">Apellido:</label> <!-- Input text para el apellido -->
+            <input type="text" name="apellido" id="apellido">
+            <br>
+
+            <label for="email">Correo Electrónico:</label> <!-- Input text para el email -->
+            <input type="email" name="email" id="email">
+            <label for="password">Escribe tu contraseña:</label> <!-- Input password para la contraseña -->
+            <input type="password" name="contraseña" id="password">
+            <br>
+
+            <p>Selecciona que redes sociales usas:</p><br> <!-- Input CHECKBOX para redes sociales -->
+            <label for="instagram">Instagram</label>
+            <input type="checkbox" name="redes" id="instagram">
+            <label for="facebook">Facebook</label>
+            <input type="checkbox" name="redes" id="facebook">
+            <label for="youtube">Youtube</label>
+            <input type="checkbox" name="redes" id="youtube">
+            <br>
+
+            <label for="datebirth">Fecha de Nacimiento:</label> <!-- Input para fecha de nacimiento -->
+            <input type="date" name="fecha de nacimiento" id="datebirth">
+            <br>
+
+            <label for="color">Selecciona tu color favorito:</label> <!-- Input color para el color favorito -->
+            <input type="color" name="color" id="color">          
+            <br>
+
+            <label for="comentario">Escribe un comentario acerca de este sitio:</label> <!-- Input textarea para comentario -->
+            <br>
+            <textarea name="comentario" id="comentario" cols="20" rows="20"></textarea>
+            <br>
+
+            <label for="calificacion">Del 1 al 10 califica este sitio</label> <!-- Input range para calificar sitio -->
+            <input type="range" name="calificacion" id="calificacion" min="0" max="10"> 
+            <br>
+
+            <label for="file">Seleccione los archivos que desea compartir conmigo</label> <!-- Input file para subir archivos -->
+            <input type="file" name="file" id="file" multiple>
+            <br>
+
+            <button>
+                <input type="submit" value="Enviar"> <!-- Input submit para enviar datos -->
+            </button>
+        </form>
+    </section>
+</body>
+</html>
